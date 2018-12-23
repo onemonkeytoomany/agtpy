@@ -1,6 +1,18 @@
 import random
 
 def game(m, n, maxPayoff = 100):
+    """ Generates a mxn matrix of pairs of integers.
+    
+    Each pair's numbers are determined uniformly at random
+    from 1, ..., maxPayoff.
+
+    Args:
+        m (int): number of rows (actions of the row player).
+        n (int): number of columns (actions of the column player).
+        maxPayoff (int): the maximum payoff of either player.
+
+    Returns: a mxn matrix of random pairs of integers.
+    """
     paymat = [ [ (0,0) for j in range(n) ] for i in range(m) ]
     for i in range(m):
         row = []
