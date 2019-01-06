@@ -25,7 +25,6 @@ def game(m, n, maxPayoff = 100):
     """
     paymat = [ n * [ None ] for i in range(m) ]
     for i in range(m):
-        paymat[i] = n * [ None ]
         for j in range(n):
             paymat[i][j] = (
                     random.randint(1, maxPayoff),
@@ -50,7 +49,6 @@ def zerosum(m, n, maxPayoff = 100):
     """
     paymat = [ n * [ None ] for i in range(m) ]
     for i in range(m):
-        paymat[i] = n * None
         for j in range(n):
             payoff = random.randint(1, maxPayoff)
             if random.randint(0, 1) == 0:
