@@ -137,7 +137,7 @@ def ibr(paymat):
     # While at least one player updates and no
     # more than mxn profiles have been visited.
     while updated > 0 and stepCount < 2 + m*n:
-        print(profile)
+        # print(profile)
         updated -= 1
         if stepCount % 2 == 0:
             # Find best response of "Row" player (0)
